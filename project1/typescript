@@ -1,0 +1,19 @@
+Script started on Mon 26 Jan 2015 06:51:44 PM PST
+sstukelja@ecc-d-15vm14:~/cs202/project1$ gedit project1.cpp&ls[Kg++ project1.cpp -o project1
+sstukelja@ecc-d-15vm14:~/cs202/project1$ g++ project1.cpp -o project1[9Pedit project1.cpp&ls[Kg++ project1.cpp -o project1clear[Kg++ project1.cpp -o project1clear[Kg++ project1.cpp -o project1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./project1
+Pick a filename
+Test
+bar   bell   orange   
+bell   bell   7   
+lemon   cherry   cherry   
+bar   bar   bar   
+bell   orange   7   
+7   7   7   
+lemon   bell   lemon   
+bar   bar   bell   
+cherry   bell   bar   
+bar   7   orange   
+sstukelja@ecc-d-15vm14:~/cs202/project1$ exit[K[K[K[Kexit
+exit
+
+Script done on Mon 26 Jan 2015 06:52:14 PM PST

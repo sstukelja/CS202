@@ -1,0 +1,74 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+// Prototyping for functions
+void readin(char data[][3][10]);
+void printout(char data[][3][10]);
+
+// Global 3D array constraints
+char data[10][3][10];
+
+int main()
+{
+	// Variables for output file name and 3D array
+	char filename[20];
+	
+	// Asks user for the desired name of the output file and opens text file
+	ofstream fout;
+	cout << "Pick a filename\n";
+	cin >> filename;	
+ 
+
+	// Function Calls
+	readin(data);
+	printout(data);
+
+	
+	//Prints to a new file
+	fout.open (filename);
+	for( int i = 0; i < 10; i++)
+	{
+		for( int j = 0; j < 3; j++)
+		{
+			fout << data[i][j];
+			fout << "   ";
+		}
+		fout << endl;
+	}
+	fout.close();
+    
+  	
+
+	return 0;
+}
+
+// Function to read in the symbols
+void readin(char data[][3][10])
+{	
+  		ifstream fin ("symbols");
+		for(int i = 0; i < 10; i++)
+			{
+			for (int j = 0; j < 3; j++)
+				{
+
+				fin >> data[i][j];
+				}
+			}
+	fin.close();
+	return NULL;
+}
+
+// Function to print out symbols to the console
+void printout(char data[][3][10])
+{
+	for(int i = 0; i < 10; i++)
+	{
+		for( int j = 0; j < 3; j++)
+		{
+			cout << data[i][j] << "   ";
+		}
+		cout << endl;
+	}
+	return NULL;
+}
